@@ -96,7 +96,8 @@
     }
 
     .faci-img {
-        display: block
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .fav-info {
