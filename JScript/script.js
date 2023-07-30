@@ -106,18 +106,3 @@ function openForm() {
 function closeForm() {
     form.classList.remove("openPop")
 }
-
-function calculateEMI(propertyPrice, loanAmount, interestRate, loanTenure) {
-    document.querySelectorAll('emi-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const propertyPrice = 1000000; // Replace with actual property price
-            const downPayment = 300000; // Replace with actual down payment amount
-            const loanAmount = propertyPrice - downPayment;
-            const interestRate = 6.5; // Replace with actual interest rate
-            const loanTenure = 20; // Replace with actual loan tenure in years
-    
-            const emi = calculateEMI(propertyPrice, loanAmount, interestRate, loanTenure);
-            alert(`EMI: ${emi}`);
-        });
-    });
-}

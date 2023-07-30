@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maximum City | Offical Site</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../Css/Style.css">
     <link rel="stylesheet" href="./Css/lightbox.css">
     <link rel="stylesheet" href="/Css/MediaCSS.css">
@@ -93,7 +94,7 @@
             <h1 class="t-center main-heading">Project Discription</h1>
             <p class="t-center subtext">This is Raunak’s Maximum City</p>
         </div>
-        <div class="about-info">
+        <div class="about-info"  data-aos="fade-up">
             <div class="about-text">
                 <h3>Raunak Group, a prominent real estate company, has meticulously crafted residential apartments in a
                     highly sought-after location in Thane West, near Ghodbunder Road. Raunak Maximum City offers a
@@ -104,7 +105,7 @@
                 <img src="./Images/about-pic2.jpg" alt="building image">
             </div>
         </div>
-        <div class="about-info">
+        <div class="about-info" data-aos="fade-left">
             <div class="about-pic animated">
                 <img src="./Images/about-pic1.jpg" alt="building image">
             </div>
@@ -115,8 +116,8 @@
             </div>
 
         </div>
-        <div class="about-info">
-            <div class="about-text">
+        <div class="about-info" >
+            <div class="about-text" data-aos="fade-right">
                 <h3>Maximum City is rightly named because you will find that every important feature and amenity has
                     been innovated to the maximum. A Jacuzzi is not a Jacuzzi, it’s a Skyline Jacuzzi. A leisure walkway
                     is not a walkway, it’s a tropical forest track.</h3>
@@ -201,7 +202,7 @@
     <div class="img-container">
         <h1 class="t-center main-heading">Show Case</h1>
         <p class="t-center subtext">Our precious Gallery Click to View </p>
-        <div class="gallery">
+        <div class="gallery" data-aos="zoom-in-up">
 
 
             <a href="/Images/gallery1.jpg" data-lightbox="Showcase Gallery Images"
@@ -247,7 +248,7 @@
     <!-- EMi Section Starts -->
     <div class="emi-Sec" id="emi">
         <h1 class="main-heading t-center">Real Estate Property Details</h1>
-        <div class="prop-main">
+        <div class="prop-main" data-aos="flip-left">
             <div class="prop-sec">
                 <div class="prop-img">
                     <img src="/Images/home1.jpg" alt="Property 5">
@@ -309,7 +310,7 @@
     <!-- Floor Plan starts -->
     <div class="floor-plan" id="f-plan">
         <h1 class="t-center main-heading">Site Map and Floor Plan</h1>
-        <div class="floorFlex">
+        <div class="floorFlex" data-aos="fade-down-left">
             <div class="floorCard">
                 <div class="floorImg">
                     <img src="/Images/floor1.jpg" alt="">
@@ -507,6 +508,13 @@
 
     <script src="../JScript/script.js"></script>
     <script src="./JScript/lightbox-plus-jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000
+      });
+    </script>
 </body>
 
 </html>
