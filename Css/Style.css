@@ -662,7 +662,7 @@ html {
 
 .titleLine {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around;s */
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 1.2rem;
     /* background-color: #e5e5e5; */
@@ -721,8 +721,12 @@ html {
 }
 
 .footLogo {
-    height: 20vh;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 17vh;
+    width: 8vw;
+    padding: .5rem;
+    /* width: 100%; */
     /* border: 1px solid green; */
 }
 
@@ -767,7 +771,7 @@ html {
     list-style: none;
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-left: 2rem;
+    margin-left: 0;
     margin-top: 5px;
 }
 
@@ -804,6 +808,7 @@ html {
     /* justify-content: center; */
     align-items: center;
     font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 15px;
 }
 
 .copyright>p {

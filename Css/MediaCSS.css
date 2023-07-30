@@ -241,9 +241,10 @@
         margin-left: 10px;
     }
     .float-btns{
-        right: 0;
+        position: fixed ;
+        right: -28px;
         bottom: 10px;
-        align-items: center;
+        /* align-items: center; */
 
     }
     .float-btns button{
