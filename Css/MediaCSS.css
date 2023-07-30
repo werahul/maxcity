@@ -1,0 +1,861 @@
+/* For mobile screeb */
+@media (max-width: 480px) {
+    body{margin: 0;padding: 0}
+    .callUs {
+        display: none;
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+
+    .nav-btn .nav-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        left: -100%;
+        top: 90px;
+        transition: 0.3s;
+        background-color: var(--main-color);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-btn .nav-menu .nav-item {
+        margin: 7px 0;
+    }
+
+    .ham-icon {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+
+    .formSlide {
+        display: block;
+        padding: 0;
+        height: auto;
+        padding-top: 7rem;
+    }
+
+    .slider {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+    .slider-btn {
+        position: absolute;
+        top: 39%;
+        left: 1rem;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form {
+        width: 100%;
+        height: auto;
+
+    }
+    .request{
+        margin-top: 0
+    }
+
+    .main-heading {
+        font-size: 1.9rem;
+    }
+
+    .subtext {
+        font: .9rem;
+        font-weight: no;
+    }
+
+    .about-info {
+        display: block
+    }
+
+    .about-text {
+        display: block;
+        font-size: .7rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-pic {
+        width: 100%;
+        height: auto
+    }
+
+    .facilites {
+        padding: 1rem 0;
+    }
+
+    .faci-img {
+        display: block
+    }
+
+    .fav-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .fav-info h5 {
+        height: 4vh;
+        transform: none;
+        opacity: 1;
+    }
+    .img-container{
+        padding: 1rem 0;
+    }
+    .gallery {
+        display: block;
+        width: 100%;
+        padding: 5px
+
+    }
+
+    .gallery img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .floor-plan {
+        padding: 1rem;
+    }
+
+    .floor-plan>.floorFlex {
+        display: block;
+    }
+
+    .floorCard {
+        width: 100%;
+    }
+
+    .floorCard .floorImg {
+        width: 100%;
+    }
+
+    .floor-plan>.masterfloorMap {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .pro_amenities {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .pro_amenities>.view-area {
+        height: auto;
+    }
+
+    .view-area .view-p {
+        height: 40vh;
+    }
+
+    .view-area>.side_pannel {
+        height: 40vh;
+    }
+
+    .side_pannel>.amenity-icon {
+        width: 6vw;
+        height: 4vh;
+        margin: 12px 0;
+    }
+
+    .amenity-icon>img {
+        filter: grayscale(0);
+    }
+
+    .video-embded {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .video-embded>.videoDiv {
+        width: 100%;
+        height: 38vh;
+    }
+
+    .location-div {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .map-cont {
+        display: block;
+    }
+
+    .left-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-map {
+        width: 100%;
+    }
+
+    .footSec {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .footSec>.logo-disc {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 21vh;
+        width: 40vw;
+    }
+
+    .logo-disc>.disc {
+        margin-left: 0;
+    }
+
+    .footSec>.foot-detials {
+        display: flex;
+        padding: 0;
+    }
+
+    .foot-contact {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        font-size: .7rem;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .float-btns{
+        right: 0;
+        bottom: 10px;
+        align-items: center;
+
+    }
+    .float-btns button{
+        height: 55px;
+        width: 55px;
+        font-size: .7rem;
+    }
+    .emi-Sec{
+        padding: 1rem;
+    }
+    .prop-main{
+        display: block;
+    }
+
+
+}
+/* For Low Reso Tablet screen */
+@media (min-width: 481px) and (max-width: 767px){
+    .callUs {
+        display: none;
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+
+    .nav-btn .nav-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        left: -100%;
+        top: 90px;
+        transition: 0.3s;
+        background-color: var(--main-color);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-btn .nav-menu .nav-item {
+        margin: 7px 0;
+    }
+
+    .ham-icon {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+      .formSlide {
+        display: block;
+        padding: 0;
+        height: auto;
+        padding-top: 7rem;
+    }
+
+    .slider {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+    }
+    .slider-btn {
+        position: absolute;
+        top: 34%;
+        left: 1rem;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+      .form {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+
+    }
+    .form input{
+        font-size: 1.5rem;
+        height: 7vh;
+        margin: 20px;
+    }
+    .form-btn{
+        font-size: 1.7rem;
+        width: 50%;
+        margin: 0 5px;
+        height: 11vh;
+    }
+    .book-by-button .join{
+        height: 6vh;
+        font-size: 1.2rem;
+        justify-content: space-evenly;
+        padding: 0 40px;
+        height: 12vh;
+    }
+    .request{
+        margin-top: 1rem;  
+        
+    }
+    .request button{
+        font-size: 1.3rem;
+        height: 12vh;
+    }
+
+    .main-heading {
+        font-size: 2.1rem;
+    }
+    .about-info {
+        display: block
+    }
+
+    .about-text {
+        display: block;
+        font-size: 1.1rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-pic {
+        width: 100%;
+        height: auto
+    }
+    .facilites {
+        padding: 1rem 0;
+    }
+
+    .faci-img {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .fav-info {
+        width: 100%;
+        height: auto;
+    }
+    .fav-info h5 {
+        height: 4vh;
+        transform: none;
+        opacity: 1;
+    }
+    .img-container{
+        padding: 1rem 0;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        width: 100%;
+        padding: 5px
+
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 35vh;
+        margin: 0;
+    }
+    .floor-plan {
+        padding: 1rem;
+    }
+
+    .floor-plan>.floorFlex {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .floorCard {
+        width: 100%;
+    }
+    .floorCard .floorImg {
+        width: 100%;
+    }
+    .floor-plan>.masterfloorMap {
+        width: 100%;
+        height: 50vh;
+    }
+    .pro_amenities {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .pro_amenities>.view-area {
+        height: auto;
+    }
+
+    .view-area .view-p {
+        height: 100vh;
+    }
+    .view-area>.side_pannel {
+        height: 100vh;
+    }
+
+    .side_pannel>.amenity-icon {
+        width: 9vw;
+        height: 10vh;
+        margin: 20px 0;
+    }
+
+    .amenity-icon>img {
+        filter: grayscale(0);
+    }
+    
+    .video-embded {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .video-embded>.videoDiv {
+        width: 100%;
+        height: 38vh;
+    }
+    .location-div {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .map-cont {
+        display: block;
+    }
+
+    .left-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-map {
+        width: 100%;
+    }
+    .footSec {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .footSec>.logo-disc {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 22vh;
+        width: 19vw;
+        margin-bottom: 20px;
+    }
+    .logo-disc>.disc {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+    .foot-contact {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        font-size: 1.1rem;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .footSec>.foot-detials {
+        height: auto;
+    }
+}
+/* For High Reso Tablet and Ipad's screen */
+@media (min-width: 768px) and (max-width: 1024px){
+    .callUs {
+        display: none;
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+
+    .nav-btn .nav-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        left: -100%;
+        top: 90px;
+        transition: 0.3s;
+        background-color: var(--main-color);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-btn .nav-menu .nav-item {
+        margin: 7px 0;
+    }
+
+    .ham-icon {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+    .formSlide {
+        display: block;
+        padding: 0;
+        height: auto;
+        padding-top: 7rem;
+    }
+
+    .slider {
+        width: 100%;
+        height: 700px;
+        margin: 0;
+        padding-top: 0;
+    }
+    .slider-btn {
+        position: absolute;
+        top: 40%;
+        left: 1rem;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .form {
+        width: 100%;
+        height: auto;
+        padding: 1rem
+    }
+    .form input{
+        font-size: 1.7rem;
+        height: 7vh;
+    }
+    .form-btn{
+        font-size: 1.7rem;
+        width: 100%;
+        margin: 0 5px;
+        height: 9vh;
+        margin-top: 1rem;
+    }
+    .book-by-button .join{
+        height: 6vh;
+        font-size: 1.4rem;
+        justify-content: space-evenly;
+        padding: 0 40px;
+        height: 7vh;
+    }
+    .request{
+        margin-top: 1rem;  
+        
+    }
+    .request button{
+        font-size: 1.3rem;
+        height: 6vh;
+    }
+    .main-heading {
+        font-size: 3.4rem;
+    }
+    .about-info {
+        display: block
+    }
+
+    .about-text {
+        display: block;
+        font-size: 1.1rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-pic {
+        width: 100%;
+        height: auto
+    }  .facilites {
+        padding: 1rem 0;
+    }
+
+    .faci-img {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .fav-info {
+        width: 100%;
+        height: auto;
+    }
+    .fav-info h5 {
+        height: 4vh;
+        transform: none;
+        opacity: 1;
+    }
+    .img-container{
+        padding: 1rem 0;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        width: 100%;
+        padding: 15px
+
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 23vh;
+        margin: 0;
+    }
+    .floor-plan {
+        padding: 1rem;
+    }
+
+    .floor-plan>.floorFlex {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .floorCard {
+        width: 100%;
+    }
+    .floorCard .floorImg {
+        width: 100%;
+    }
+    .floor-plan>.masterfloorMap {
+        width: 100%;
+        height: 50vh;
+    }
+    .pro_amenities {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .pro_amenities>.view-area {
+        height: auto;
+    }
+
+    .view-area .view-p {
+        height: 50vh;
+    }
+    .view-area>.side_pannel {
+        height: 50vh;
+    }
+
+    .side_pannel>.amenity-icon {
+        width: 8vw;
+        height: 5vh;
+        margin: 27px 0;
+    }
+
+    .amenity-icon>img {
+        filter: grayscale(0);
+    }
+    .video-embded {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .video-embded>.videoDiv {
+        width: 100%;
+        height: 38vh;
+    }
+    .location-div {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .map-cont {
+        display: block;
+    }
+
+    .left-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-map {
+        width: 100%;
+    }
+    .footSec {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .footSec>.logo-disc {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 14vh;
+        width: 19vw;
+        margin-bottom: 20px;
+    }
+    .logo-disc>.disc {
+        margin-left: 0;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .foot-contact {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        font-size: 1.1rem;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .footSec>.foot-detials {
+        height: auto;
+    }
+    .float-btns button{
+        height: 65px;
+        width: 65px;
+        font-size: .8rem;
+    }
+    
+}
+/* For Laptop and Computer screen */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .navbar{
+        padding: 0 3rem;
+    }
+    .formSlide{
+        padding: 0 3rem;
+        height: auto;
+        padding-top: 7rem;
+        margin-bottom: 1rem;
+    }
+    .slider{
+        height: 576px;
+    }
+    .form{
+        height: auto;
+
+    }
+    .form input{
+        margin: 0;
+    }
+    .form-btn{
+        height: 4vh;
+        margin-top: 1rem;
+    }
+    .request{
+        margin-top: 0;
+    }
+    .request button{
+        height: 4vh;
+    }
+    .about-sec{
+        padding: 1rem 3rem;
+    }
+    .about-pic {
+        height: auto;
+    }
+    .about-info{
+        height: 34vh;
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: 27vh;
+    }
+    .floorFlex>.floorCard{
+        padding: 10px;
+    }
+    .floorCard>.floorImg{
+        width: 100%;
+    }
+    .floor-plan>.masterfloorMap{
+        width: 100%;
+        height: 57vh;
+    }
+    .view-area .view-p{
+        height: 70vh;
+    }
+    .view-area>.side_pannel{
+        height: 70vh;
+    }
+    .side_pannel>.amenity-icon{
+        height: 9vh;
+    }
+    .pro_amenities>.view-area{
+        height: auto;
+    }
+    .right-map{
+        height: 40vh;
+    }
+    .map-cont{
+        align-items: normal;
+        height: auto;
+    }
+    .location-div{
+        height: auto;
+    }
+    .left-info{
+        height: auto;
+    }
+    .footLogo {
+        height: 18vh;
+        width: 100%;
+        /* border: 1px solid green; */
+    }
+    .logo-disc>.disc {
+        font-size: 1.5rem;
+    }
+    .foot-contact{
+        font-size: 1.3rem;
+        height: auto;
+    }
+}

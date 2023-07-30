@@ -1,0 +1,917 @@
+/* for Fonts familys */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* font-family: 'Merriweather Sans', sans-serif; */
+
+:root {
+    --main-color:
+        rgb(18 26 55);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* other css Classes Property */
+.t-center {
+    text-align: center;
+    /* colo: linear-gradient(270deg, #916A3B 3.43%, #F4D092 96.17%); */
+}
+
+.c_pointer {
+    cursor: pointer;
+}
+
+/* NavBar styling Start */
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--main-color);
+    box-shadow: 0px 2px 5px goldenrod;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0 auto;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn .nav-menu {
+    display: flex;
+}
+
+.nav-btn .nav-menu .nav-item {
+    margin: 0 21px;
+    list-style: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    padding: 10px 0;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: border .2s ease-in;
+}
+
+.nav-link:hover {
+    border-top: 2px solid white;
+}
+
+.callUs {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.callUs p {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: .8rem;
+    margin-bottom: 4px;
+}
+
+.callUs button {
+    width: 55%;
+    height: 48px;
+    border-radius: 0;
+    outline: none;
+    background: linear-gradient(270deg, #916A3B 3.43%, #F4D092 96.17%);
+    ;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 6px;
+    transition: .3s;
+}
+
+.callUs button:hover {
+    border-color: white;
+    background: transparent;
+    margin-bottom: 4px;
+    background: linear-gradient(270deg, #916A3B 3.43%, #F4D092 96.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.ham-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.ham-icon img {
+    filter: invert(1);
+}
+
+/* NavBar Styling Ends */
+
+
+/* Slide Image and Forms styling Start */
+.slide-img {
+    object-fit: cover;
+}
+
+.formSlide {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    display: flex;
+    padding-top: 7rem;
+    margin-bottom: 1rem;
+
+}
+
+.slider {
+    width: 70%;
+    height: 500px;
+    box-shadow: 0px 0px 3px gray;
+    margin: auto 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slider .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .7s;
+}
+
+.form {
+    width: 27%;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* position: relative; */
+}
+
+.form input {
+    width: 100%;
+    height: 7vh;
+    margin: 5px 0;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid goldenrod;
+}
+
+.form-btn {
+    width: 100%;
+    height: 6vh;
+    border-radius: 4px;
+    border: 2px solid goldenrod;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: goldenrod;
+
+}
+
+.form-btn:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.book-by-button {
+    display: flex;
+    justify-content: space-around
+}
+
+.join {
+    display: flex;
+    background-color: lightgreen;
+    width: 47%;
+    margin: 10px 0;
+    border-radius: 2px;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.join p {}
+
+.bg-lightBlue {
+    background-color: lightblue;
+}
+
+.request {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid darkgoldenrod; */
+    /* position: absolute;
+    bottom: 10px;
+    width: 90%; */
+}
+
+.request button {
+    width: 80%;
+    height: 6vh;
+    margin: 7px 0;
+    background-color: goldenrod;
+    color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.slider-btn {
+    position: absolute;
+    top: 60%;
+    left: 1.3rem;
+    width: 69%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-btn img {
+    transition: all .6s;
+}
+
+.slider-btn img:hover {
+    transform: scale(1.3);
+}
+
+/* Slide Image and Forms styling Ends */
+
+/* Project Info Styling Start */
+.about-sec {
+    width: 100%;
+    height: auto;
+    background-color: var(--main-color);
+    padding: 20px;
+    color: white;
+
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 10px 0;
+    background: linear-gradient(270deg, #916A3B 3.43%, #F4D092 96.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+    font-weight: bold;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: auto;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 50vh;
+    font-family: 'Merriweather Sans', sans-serif;
+    justify-content: center;
+    margin: 0 10px;
+    line-height: 2
+}
+
+.about-text h3 {
+    font-weight: 300;
+}
+
+.about-pic {
+    width: 35%;
+    height: auto;
+    padding: 10px;
+}
+
+.about-pic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.about-text ul {
+    list-style: url("../Images/Icons/success.png");
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.animated {
+    animation: up-down 3s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Project INfo styling End */
+
+/* Facilities  styling Start */
+.facilites {
+    background: var(--main-color);
+}
+
+.faci-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fav-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(204, 199, 199);
+}
+
+.fav-info img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.fav-info img:hover {
+    filter: contrast(200%);
+}
+
+.fav-info h5 {
+    transform: translateY(-90px);
+    transition: all 1s;
+    opacity: 0;
+    padding: .5rem 10px;
+    z-index: 1;
+    height: 14vh;
+}
+
+.fav-info h5:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Facilities  styling Ends */
+
+/* ShowCase Styling Start */
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: aliceblue;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 25vw;
+    height: 35vh;
+    margin: 10px 15px;
+    border-radius: 7px;
+    transition: 1s;
+}
+
+.gallery img:hover {
+    transform: rotate(-5deg);
+    border-radius: 0px;
+}
+
+/* ShowCase Styling End */
+/* Floor Plan Styling Start */
+
+.floor-plan {
+    background: var(--main-color);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floor-plan>.floorFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.floorFlex>.floorCard {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floorCard>.floorImg {
+    width: 20vw;
+    height: 30vh;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.floorImg>.enq {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+
+}
+
+.floorImg:hover>.enq {
+    top: 0
+}
+
+.enq .enq-btn {
+    background-color: black;
+    border: 1px solid white;
+    width: 100%;
+    color: white;
+    height: 7vh;
+    font-size: 1rem;
+}
+
+.floorImg>img {
+    width: 100%;
+    height: 100%;
+}
+
+.floorCard .floor-btn {
+    width: 100%;
+    height: 7vh;
+    font-size: 1.2rem;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+.floorCard .floor-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.floor-plan>.masterfloorMap {
+    width: 87%;
+    height: 70vh;
+    border: 1px solid black;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.masterfloorMap>img {
+    height: 100%;
+    width: 100%;
+}
+
+.masterfloorMap>.masterOver {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    transition: .6s;
+
+}
+
+.masterfloorMap:hover>.masterOver {
+    top: 0;
+}
+
+.masterOver>.master-btn {
+    background-color: black;
+    border: 1px solid white;
+    width: 100%;
+    color: white;
+    height: 10vh;
+    font-size: 2rem;
+}
+
+/* Floor Plan Styling End */
+
+/* Project Amenities Styling Start */
+.pro_amenities {
+    width: 100%;
+    height: auto;
+    padding: 1rem 3rem;
+    background-color: aliceblue;
+
+}
+
+.pro_amenities>.view-area {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid green; */
+    display: flex;
+}
+
+.view-area>.side_pannel {
+    width: 20%;
+    height: 100vh;
+    background-color: #dddcdf63;
+    /* padding: 10px ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_pannel>.amenity-icon {
+    width: 7vw;
+    height: 14vh;
+    margin: 1rem auto;
+}
+
+.amenity-icon>img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: .3s;
+    filter: grayscale(100%);
+}
+
+.amenity-icon>img:hover {
+    filter: grayscale(0);
+}
+
+.view-area .view-p {
+    width: 80%;
+    height: 100vh;
+}
+
+.view-p>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+/* Project Amenities Styling End */
+
+/* Video Embded Styling Start */
+
+.video-embded {
+    width: 100%;
+    height: 70vh;
+    padding: 1rem 3rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-embded>.videoDiv {
+    width: 100vw;
+    height: 60vh;
+}
+
+/* Video Embded Styling End */
+
+/* Loction Styling Start */
+
+.location-div {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+.map-cont {
+    display: flex;
+    margin-top: 1rem;
+    padding: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-info {
+    width: 50%;
+    height: 80vh;
+    padding: 20px;
+}
+
+.titleLine {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.2rem;
+    /* background-color: #e5e5e5; */
+    border-radius: 4px;
+}
+
+.block {
+    display: none;
+}
+
+.titleList ul {
+    /* background-color: #e5e5e5; */
+}
+
+.titleList li {
+    list-style: url('/Images/Icons/success.png');
+    margin-left: 2rem !important;
+    /* background-color: aliceblue; */
+    margin: 10px 0;
+    padding: 10px 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: .9rem;
+}
+
+.collapes-btn {
+    font-size: 2.2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.right-map {
+    width: 50%;
+    height: 70vh;
+    border-radius: 14px 14px 2px 2px;
+    overflow: hidden;
+}
+
+/* Loction Styling End */
+/* Footer Styling Start */
+.footSec {
+    width: 100%;
+    height: 60vh;
+    background-color: var(--main-color);
+    padding: 1rem 3rem;
+}
+
+.footSec>.logo-disc {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.footLogo {
+    height: 20vh;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.footLogo>img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-disc>.disc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-left: 3rem;
+}
+
+.footSec>.foot-detials {
+    /* background-color: blue; */
+    height: 30vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem;
+}
+
+.foot-contact {
+    width: 100%;
+    height: 30vh;
+    /* border: 1px solid white; */
+}
+
+.foot-contact>h2 {
+    color: lightgray;
+    font-family: 'Merriweather Sans', sans-serif;
+    /* text-align: center; */
+
+}
+
+.foot-contact li {
+    list-style: none;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-left: 2rem;
+    margin-top: 5px;
+}
+
+.foot-contact a {
+    text-decoration: none;
+}
+
+.socialIcons img {
+    filter: grayscale(70%);
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.socialIcons img:hover {
+    filter: grayscale(0);
+}
+
+.mail-mobile {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mail-mobile img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.mailMerge {
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.copyright>p {
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 5px;
+    font-size: .8rem;
+}
+
+/* Footer Styling Ends */
+.float-btns {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 100px;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 99;
+}
+
+.popup {
+    position: relative;
+    transition: all 1s;
+}
+
+.float-btns button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: aliceblue;
+    color: black;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: 1px solid goldenrod;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.form-pop {
+    position: fixed;
+    z-index: 99;
+    bottom: 1.4rem;
+    right: 1rem;
+    transform: scale(.7);
+    visibility: hidden;
+}
+
+.openPop {
+    visibility: visible;
+}
+
+.form-pop #close {
+    background-color: rgb(187, 59, 59);
+    color: white;
+    width: 10%;
+    height: 7vh;
+    border: none;
+    outline: none;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+/* Emi Styling */
+.emi-Sec{
+    padding: 1rem 3rem;
+}
+.prop-main{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+.prop-sec {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    /* background-color: var(--main-color); */
+    padding: 1rem;
+    border-radius: 6px;
+    color: var(--main-color);
+}
+.prop-img img{
+    width: 100%;
+    height: 100%;
+}
+.prop-sec h2{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+}
+.prop-sec p{
+    font-family: 'Merriweather Sans', sans-serif;
+    /* color: white; */
+}
+.prop-sec button{
+    height: 7vh;
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--main-color);
+    /* color: white; */
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+.prop-sec button:hover{
+    background: var(--main-color);
+    color: white
+}
+
+

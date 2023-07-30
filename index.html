@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum City | Offical Site</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+    <link rel="stylesheet" href="./Css/lightbox.css">
+    <link rel="stylesheet" href="/Css/MediaCSS.css">
+</head>
+
+<body>
+
+
+    <!-- NavBar Start -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../Images/logo.png" alt="logo">
+        </div>
+        <div class="nav-btn">
+            <ul class="nav-menu">
+                <a href="#" class="nav-link">
+                    <li class="nav-item"> Home</li>
+                </a>
+                <a href="#" class="nav-link">
+                    <li class="nav-item">Properties</li>
+                </a>
+                <a href="#f-plan" class="nav-link">
+                    <li class="nav-item">Floor Plan</li>
+                </a>
+                <a href="#about-pro" class="nav-link">
+                    <li class="nav-item">About Us</li>
+                </a>
+                <a href="#" class="nav-link">
+                    <li class="nav-item">Contact Us</li>
+                </a>
+                <a href="#location" class="nav-link">
+                    <li class="nav-item">Location</li>
+                </a>
+            </ul>
+        </div>
+        <div class="callUs">
+            <p>Talk to our Advisor</p>
+            <button></span>Call: +91 1234567890</button>
+        </div>
+        <div class="ham-icon">
+            <img width="25px" src="../Images/Icons/ham.png" alt="">
+        </div>
+    </nav>
+    <!-- NavBar End -->
+    <!-- Image Slide and Form start -->
+    <div class="formSlide">
+
+        <div class="slider">
+            <img src="../Images/cra-img2.jpg" alt="" class="slide">
+            <img src="../Images/cra-img1.jpg" alt="" class="slide">
+            <img src="../Images/cra-img2.jpg" alt="" class="slide">
+        </div>
+        <div class="form">
+            <form action="#">
+                <input type="text" placeholder="Name">
+                <input type="number" placeholder="Mobile No.">
+                <input type="email" placeholder="Email ">
+                <input type="text" placeholder="City ">
+                <button class="form-btn" type="submit">Submit</button>
+            </form>
+            <div class="book-by-button">
+                <div class="join">
+                    <img src="/Images/Icons/whatsapp.png" alt="whatsapp">
+                    <p>Jion Our Group</p>
+                </div>
+                <div class="join bg-lightBlue">
+                    <img src="/Images/Icons/telegram.png" alt="whatsapp">
+                    <p>Jion Our Group</p>
+                </div>
+            </div>
+            <div class="request">
+                <button>REQUEST SITE VISIT</button>
+                <button>REQUEST MEETING</Main></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="slider-btn">
+        <img src="../Images/Icons/left-arrow.png" alt="" onclick="prev()">
+        <img src="../Images/Icons/right-arrow.png" alt="" onclick="next()">
+    </div>
+    <!-- Image Slide and Form End -->
+    <!-- Project Info start -->
+    <div class="about-sec" id="about-pro">
+        <div class="main-brand">
+            <h1 class="t-center main-heading">Project Discription</h1>
+            <p class="t-center subtext">This is Raunak’s Maximum City</p>
+        </div>
+        <div class="about-info">
+            <div class="about-text">
+                <h3>Raunak Group, a prominent real estate company, has meticulously crafted residential apartments in a
+                    highly sought-after location in Thane West, near Ghodbunder Road. Raunak Maximum City offers a
+                    variety of affordable, comfortable and well-ventilated apartment units. It is a 30 Storey Tower,
+                    part of a 20-acre Mega opulent township located at the prime location of the Thane West.</h3>
+            </div>
+            <div class="about-pic animated">
+                <img src="./Images/about-pic2.jpg" alt="building image">
+            </div>
+        </div>
+        <div class="about-info">
+            <div class="about-pic animated">
+                <img src="./Images/about-pic1.jpg" alt="building image">
+            </div>
+            <div class="about-text">
+                <h3>These apartments offer affordable and comfortable 1 BHK units with a carpet area of 450-500 sqft,
+                    and 2 BHK units with a carpet area of 610-622 sqft. The possession is expected in 3-4* years. Raunak
+                    Maximum City boasts multiple amenities and is part of a 20-acre township..</h3>
+            </div>
+
+        </div>
+        <div class="about-info">
+            <div class="about-text">
+                <h3>Maximum City is rightly named because you will find that every important feature and amenity has
+                    been innovated to the maximum. A Jacuzzi is not a Jacuzzi, it’s a Skyline Jacuzzi. A leisure walkway
+                    is not a walkway, it’s a tropical forest track.</h3>
+                <ul>
+                    <li>Fully-furnished 1 & 2 BHKs designed for big space</li>
+                    <li>Multi-Zone Life created to bring nature & leisure together</li>
+                    <li>Ghodbunder Lifestyle Belt where you get all the best infrastructure on one main road</li>
+                    <li>Your nature at maximum with a 30-acres layout at Yeoor foothills</li>
+                </ul>
+            </div>
+            <div class="about-pic animated">
+                <img src="./Images/about-pic3.jpg" alt="building image">
+            </div>
+
+        </div>
+    </div>
+    <!-- Project Info End -->
+    <!-- Popup Button starts -->
+    <div class="popup">
+        <div class="float-btns ">
+           <a href="#emi"> <button><img src="/Images/Icons/signing.png" alt=""></button></a>
+            <button id="form-btn" onclick="openForm()"><img src="/Images/Icons/form.png" alt=""></button>
+        </div>
+        <div class="form form-pop   ">
+            <button id="close" onclick="closeForm()">X</button>
+            <form action="#">
+                <input type="text" placeholder="Name">
+                <input type="number" placeholder="Mobile No.">
+                <input type="email" placeholder="Email ">
+                <input type="text" placeholder="City ">
+                <button class="form-btn" type="submit">Submit</button>
+            </form>
+            <div class="book-by-button">
+                <div class="join">
+                    <img src="/Images/Icons/whatsapp.png" alt="whatsapp">
+                    <p>Jion Our Group</p>
+                </div>
+                <div class="join bg-lightBlue">
+                    <img src="/Images/Icons/telegram.png" alt="whatsapp">
+                    <p>Jion Our Group</p>
+                </div>
+            </div>
+            <div class="request">
+                <button>REQUEST SITE VISIT</button>
+                <button>REQUEST MEETING</Main></button>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Button starts -->
+
+    <!-- Facilitieso start -->
+    <div class="facilites">
+        <div class="faci-img">
+            <div class="fav-info">
+                <img src="./Images/Residence.png" alt="">
+                <h5>Property Residential</h5>
+            </div>
+            <div class="fav-info">
+                <img src="./Images/landscape.png" alt="">
+                <h5>Land Size 32 Acres</h>
+            </div>
+            <div class="fav-info">
+                <img src="./Images/Building.png" alt="">
+                <h5>Floors 30 Storey</h5>
+            </div>
+            <div class="fav-info">
+                <img src="./Images/Apartment.png" alt="">
+                <h5>Apartments 1,3 & 3 BHK</h5>
+            </div>
+            <div class="fav-info">
+                <img src="./Images/Map-Marker.png" alt="">
+                <h5>Area 435 - 660 sq ft</h5>
+            </div>
+            <div class="fav-info">
+                <img src="./Images/possession.png" alt="">
+                <h5>Possession Jul 2027</h5>
+            </div>
+        </div>
+    </div>
+    <!-- Facilitieso End -->
+    <!-- Show Case  start -->
+    <div class="img-container">
+        <h1 class="t-center main-heading">Show Case</h1>
+        <p class="t-center subtext">Our precious Gallery Click to View </p>
+        <div class="gallery">
+
+
+            <a href="/Images/gallery1.jpg" data-lightbox="Showcase Gallery Images"
+                data-title="Fully-furnished Bed Room">
+                <img src="/Images/gallery1.jpg" alt=" galleryI">
+            </a>
+            <a href="/Images/gallery2.jpg" data-lightbox="Showcase Gallery Images" data-title="See view Balcony">
+                <img src="/Images/gallery2.jpg" alt=" galleryI">
+            </a>
+            <a href="/Images/gallery3.jpg" data-lightbox="Showcase Gallery Images"
+                data-title="Fully-furnished Hall and Dining area">
+                <img src="/Images/gallery3.jpg" alt=" galleryI">
+            </a>
+            <a href="/Images/gallery4.jpg" data-lightbox="Showcase Gallery Images" data-title="Minimalistic Hall">
+                <img src="/Images/gallery4.jpg" alt=" galleryI">
+            </a>
+            <a href="/Images/gallery5.jpg" data-lightbox="Showcase Gallery Images" data-title="Green Garder Area">
+                <img src="/Images/gallery5.jpg" alt=" galleryI">
+            </a>
+            <a href="/Images/gallery6.jpg" data-lightbox="Showcase Gallery Images"
+                data-title="Fully-furnished Wash Room">
+                <img src="/Images/gallery6.jpg" alt=" galleryI">
+            </a>
+            <a href="/Images/gallery7.jpg" data-lightbox="Showcase Gallery Images"
+                data-title="Fully-furnished Bath Room">
+                <img src="/Images/gallery7.jpg" alt=" galleryI">
+            </a>
+            <a href="/Images/gallery8.jpg" data-lightbox="Showcase Gallery Images" data-title="Shoothing Green Balcony">
+                <img src="/Images/gallery8.jpg" alt=" galleryI">
+            </a>
+            <a href="/Images/gallery9.jpg" data-lightbox="Showcase Gallery Images"
+                data-title="Relaxing and Chilling Area">
+                <img src="/Images/gallery9.jpg" alt=" galleryI">
+            </a>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Show Case  End -->
+    <!-- EMi Section Starts -->
+    <div class="emi-Sec" id="emi">
+        <h1 class="main-heading t-center">Real Estate Property Details</h1>
+        <div class="prop-main">
+            <div class="prop-sec">
+                <div class="prop-img">
+                    <img src="/Images/home1.jpg" alt="Property 5">
+                </div>
+                <h2>Property 1</h2>
+                <p>Property Area: 1200 sq. ft.</p>
+                <p>Construction Site: City Center</p>
+                <p>Status: Under Construction</p>
+                <p>No. of Stories: 10</p>
+                <button  onclick="calculateEMI()">Calculate EMI</button>
+            </div>
+            <div class="prop-sec">
+                <div class="prop-img">
+                    <img src="/Images/home2.jpg" alt="Property 5">
+                </div>
+                <h2>Property 2</h2>
+                <p>Property Area: 800 sq. ft.</p>
+                <p>Construction Site: Suburb</p>
+                <p>Status: Ready to Move</p>
+                <p>No. of Stories: 5</p>
+                <button>Calculate EMI</button>
+            </div>
+            <div class="prop-sec">
+                <div class="prop-img">
+                    <img src="/Images/home3.jpg" alt="Property 5">
+                </div>
+                <h2>Property 3</h2>
+                <p>Property Area: 1500 sq. ft.</p>
+                <p>Construction Site: Downtown</p>
+                <p>Status: Under Construction</p>
+                <p>No. of Stories: 15</p>
+                <button>Calculate EMI</button>
+            </div>
+            <div class="prop-sec">
+                <div class="prop-img">
+                    <img src="/Images/home4.jpg" alt="Property 5">
+                </div>
+                <h2>Property 4</h2>
+                <p>Property Area: 1000 sq. ft.</p>
+                <p>Construction Site: Outskirts</p>
+                <p>Status: Ready to Move</p>
+                <p>No. of Stories: 8</p>
+                <button>Calculate EMI</button>
+            </div>
+            <div class="prop-sec">
+                <div class="prop-img">
+                    <img src="/Images/home5.jpg" alt="Property 5">
+                </div>
+                <h2>Property 5</h2>
+                <p>Property Area: 1800 sq. ft.</p>
+                <p>Construction Site: Riverside</p>
+                <p>Status: Under Construction</p>
+                <p>No. of Stories: 12</p>
+                <button>Calculate EMI</button>
+            </div>
+        </div>
+    </div>
+    <!-- EMi Section Ends -->
+    <!-- Floor Plan starts -->
+    <div class="floor-plan" id="f-plan">
+        <h1 class="t-center main-heading">Site Map and Floor Plan</h1>
+        <div class="floorFlex">
+            <div class="floorCard">
+                <div class="floorImg">
+                    <img src="/Images/floor1.jpg" alt="">
+                    <div class="enq">
+                        <Button class="enq-btn c_pointer">Enquire Now</Button>
+                    </div>
+                </div>
+                <button class="floor-btn c_pointer">2 BHK</button>
+            </div>
+            <div class="floorCard">
+                <div class="floorImg">
+                    <img src="/Images/floor2.jpg" alt="">
+                    <div class="enq">
+                        <Button class="enq-btn c_pointer">Enquire Now</Button>
+                    </div>
+
+                </div>
+                <button class="floor-btn c_pointer">2 BHK + Study</button>
+            </div>
+            <div class="floorCard">
+                <div class="floorImg">
+                    <img src="/Images/floor3.jpg" alt="">
+                    <div class="enq">
+                        <Button class="enq-btn c_pointer">Enquire Now</Button>
+                    </div>
+                </div>
+                <button class="floor-btn c_pointer">3 BHK</button>
+            </div>
+            <div class="floorCard">
+                <div class="floorImg">
+                    <img src="/Images/floor4.jpg" alt="">
+                    <div class="enq">
+                        <Button class="enq-btn c_pointer">Enquire Now</Button>
+                    </div>
+                </div>
+                <button class="floor-btn c_pointer">3 BHK + Study</button>
+            </div>
+        </div>
+        <div class="masterfloorMap">
+            <img src="/Images/masterfloor.jpg" alt="">
+            <div class="masterOver">
+                <button class="master-btn c_pointer">View Master Plan</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Floor Plan ends -->
+    <!-- Project Amenities -->
+    <div class="pro_amenities">
+        <h1 class="t-center main-heading">Project Amenities</h1>
+        <div class="view-area">
+            <div class="side_pannel">
+                <div class="amenity-icon">
+                    <img class="amiImg" src="/Images/swimming-pool.png" alt="" onclick="swimImg()">
+                    <!-- <h4>Swimming Pool</h4> -->
+                </div>
+                <div class="amenity-icon">
+                    <img src="/Images/cycling.png" alt="" onclick="cycleImg()">
+                    <!-- <h4>Cycling Track</h4> -->
+                </div>
+                <div class="amenity-icon">
+                    <img src="/Images/yoga.png" alt="" onclick="yogaImg()">
+                    <!-- <h4>Yoga Zone</h4> -->
+                </div>
+                <div class="amenity-icon">
+                    <img src="/Images/hall.png" alt="" onclick="hallImg()">
+                    <!-- <h4>Banquet Hall</h4> -->
+                </div>
+                <div class="amenity-icon">
+                    <img src="/Images/sports.png" alt="" onclick="clubImg()">
+                    <!-- <h4>Sports Area</h4> -->
+                </div>
+            </div>
+            <div class="view-p">
+                <img class="viweImg" src="/Images/am/pool.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Video Embed Start -->
+    <div class="video-embded">
+        <div class="videoDiv">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4jnzf1yj48M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Video Embed End -->
+    <!-- Location and Features Start -->
+    <div class="location-div" id="location">
+        <h1 class="t-center main-heading">Location</h1>
+        <p class="t-center subtext">Check Out Features </p>
+        <div class="map-cont">
+            <div class="left-info">
+                <div class="titleLine ">
+                    <h2>Infrastructure</h2>
+                    <button id="1" class="collapes-btn" onclick="collapes()">-</button>
+                </div>
+                <div class="titleList">
+                    <ul>
+                        <li>Kasarvadavali Metro Station</li>
+                        <li>2 Minutes From Ghodbunder Road</li>
+                        <li>Eastern & Western Expressway</li>
+                        <li>Upcoming Green Parks</li>
+                        <li>Upcoming Grand Sports Stadium</li>
+                        <li>Upcoming SGNP Tunnel</li>
+                    </ul>
+                </div>
+                <!-- <div class="titleLine ">
+                <h2>Healthcare</h2>
+                <button id="2" class="collapes-btn" onclick="collapes()">-</button>
+            </div>
+            <div class="titleList">
+                <ul>
+                    <li>Kevalya Hospital</li>
+                    <li>Hiranandani Hospital</li>
+                    <li>Currae Hospital 5 min</li>
+                    <li>Vedant Hospital 5 min</li>
+                    <li>Highland Hospital 20 min</li>   
+                </ul>
+            </div> -->
+            </div>
+            <div class="right-map animated">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.4923176835255!2d72.97810767411852!3d19.217364147521575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b94592ba0f01%3A0x64c5976843693c91!2sHighland%20Corporate%20Center!5e0!3m2!1sen!2sin!4v1690634676861!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Location and Features End -->
+    <!-- Footer Start -->
+    <div class="footSec">
+        <div class="logo-disc">
+            <div class="footLogo">
+                <img src="/Images/logo.png" alt="">
+            </div>
+            <div class="disc">
+                <h3>Welcome to <b>Proportunity</b>.</h3>
+                <p>Discover new properties with expert guidance, and personalized approach for unparalleled success.
+                    Elevate your real estate ventures with us.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="foot-detials">
+            <div class="foot-contact">
+                <h2>Contact Us</h2>
+                <div class="socialIcons">
+                    <img src="/Images/Icons/facebook.png" alt="facebook">
+                    <img src="/Images/Icons/instagram.png" alt="instagram">
+                    <img src="/Images/Icons/linkedin.png" alt="linkedin">
+                </div>
+                <div class="mail-mobile">
+                    <div class="mailMerge"><img src="/Images/Icons/gmail.png"
+                            alt="gmail"><span>info@proportunity.in</span></div>
+
+                    <div class="mailMerge"><img src="/Images/Icons/telephone-call.png" alt="gmail"><span>+91
+                            1234567890</span></div>
+
+                </div>
+            </div>
+            <div class="foot-contact">
+                <h2>Quick Links</h2>
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Properties</li>
+                    </a>
+                    <a href="#">
+                        <li>Compare Properties</li>
+                    </a>
+                    <a href="#">
+                        <li>About us</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact us</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p id="copyright"> </p>
+        </div>
+    </div>
+
+    <!-- Footer Ends -->
+
+
+    <script src="../JScript/script.js"></script>
+    <script src="./JScript/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>
